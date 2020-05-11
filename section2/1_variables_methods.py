@@ -1,3 +1,9 @@
+import math
+import os
+import sys
+
+import requests
+
 a = 5
 b = 10
 my_variable = 56
@@ -6,18 +12,28 @@ any_variable_name = 100
 string_variable = "hello"
 single_quotes = 'strings can have single quotes'
 
+print(sys.version)
+print(sys.executable)
+r = requests.get("https://google.com")
+print(r.status_code)
+print(r.ok)
+
 print(string_variable)
 print(my_variable)
 
 # print is a method with one parameter—what we want to print
 
+
 def my_print_method(my_parameter):
     print(my_parameter)
 
+
 my_print_method(string_variable)
+
 
 def my_multiplication_method(number_one, number_two):
     return number_one * number_two
+
 
 result = my_multiplication_method(a, b)
 print(result)
